@@ -1,24 +1,29 @@
+/* Basis-Styles für den gesamten Körper */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
+/* Container für zentrierten Inhalt mit maximaler Breite */
 .container {
     max-width: 800px;
     margin: auto;
 }
 
+/* Eingabefeld für die Repository-URL */
 #repoUrl {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
 }
 
+/* Button zum Laden der Commits */
 #loadCommits {
     padding: 10px 15px;
     cursor: pointer;
 }
 
+/* Diagramm für die Anzeige der Commits */
 #commitChart {
     margin-top: 20px;
 }
