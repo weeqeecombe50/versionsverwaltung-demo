@@ -27,33 +27,3 @@ body {
 #commitChart {
     margin-top: 20px;
 }
-
-/* Base styles for the entire body */
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-/* Container for centered content with maximum width */
-.container {
-    max-width: 800px;
-    margin: auto;
-}
-
-/* Input field for the repository URL */
-#repoUrl {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-/* Button to load commits */
-#loadCommits {
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-/* Chart for displaying commits */
-#commitChart {
-    margin-top: 20px;
-}
