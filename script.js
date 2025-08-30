@@ -1,11 +1,11 @@
 document.getElementById('loadCommits').addEventListener('click', function() {
     const repoUrl = document.getElementById('repoUrl').value;
-    // Hier logik hinzufügen, um Commits von GitHub API zu laden und zu visualisieren.
-    // Dies könnte ein Fetch-Request zur GitHub API sein.
+    // Fetch-Request zur GitHub API durchführen, um die Commits zu laden.
     console.log(`Lade Commits für: ${repoUrl}`);
     // Fetch request to get commits from GitHub API
     fetch(`https://api.github.com/repos/${repoUrl}/commits`)
         .then(response => {
+            // Überprüfen, ob die Antwort ok ist
             if (!response.ok) {
                 throw new Error('Netzwerkantwort war nicht ok');
             }
@@ -16,6 +16,7 @@ document.getElementById('loadCommits').addEventListener('click', function() {
             console.log(commits);
         })
         .catch(error => {
+            // Fehlerbehandlung bei Fetch Operation
             console.error('Es gab ein Problem mit fetch operation:', error);
         });
 });
